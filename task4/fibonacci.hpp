@@ -1,3 +1,4 @@
 #pragma once
 
-int fibonacci(int sequence);
+int fibonacci1(int sequence);
+int fibonacci2(int sequence);
