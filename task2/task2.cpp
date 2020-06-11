@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <iostream>
+#include <iterator>
 
 void print1(const std::vector<int>& vec) {
     std::cout << "print1:\n";
@@ -71,6 +72,12 @@ void print7(const std::vector<int>& vec) {
     std::cout << '\n';
 }
 
+void print8(const std::vector<int>& vec) {
+    std::cout << "print8:\n";
+    std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::cout << '\n';
+}
+
 int main() {
     print1(refVec);
     print2(refVec);
@@ -79,5 +86,6 @@ int main() {
     print5(refVec);
     print6(refVec);
     print7(refVec);
+    print8(refVec);
     return 0;
 }
