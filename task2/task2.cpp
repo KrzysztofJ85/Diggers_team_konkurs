@@ -52,11 +52,23 @@ void print5(const std::vector<int>& vec) {
     std::cout << '\n';
 }
 
+void print6(const std::vector<int>& vec) {
+    std::cout << "print6:\n";
+    for (auto& el : vec) {
+        auto result = std::find(vec.begin(), vec.end(), el);
+        if (result != vec.end()) {
+            std::cout << el << ' ';
+        }
+    }
+    std::cout << '\n';
+}
+
 int main() {
     print1(refVec);
     print2(refVec);
     print3(refVec);
     print4(refVec);
     print5(refVec);
+    print6(refVec);
     return 0;
 }
