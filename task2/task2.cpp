@@ -63,6 +63,14 @@ void print6(const std::vector<int>& vec) {
     std::cout << '\n';
 }
 
+void print7(const std::vector<int>& vec) {
+    std::cout << "print7:\n";
+    for (auto& el : vec) {
+        std::cout << el << ' ';
+    }
+    std::cout << '\n';
+}
+
 int main() {
     print1(refVec);
     print2(refVec);
@@ -70,5 +78,6 @@ int main() {
     print4(refVec);
     print5(refVec);
     print6(refVec);
+    print7(refVec);
     return 0;
 }
