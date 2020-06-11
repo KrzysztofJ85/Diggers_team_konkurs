@@ -50,6 +50,14 @@ std::vector<int> reverseSolutionSix(std::vector<int> vec) {
     return vec;
 }
 
+std::vector<int> reverseSolutionSeven(std::vector<int> vec) {
+    for (auto start = vec.begin(), end = std::prev(vec.end()); start < end; ++start, --end) {
+        std::swap(*start, *end);
+    }
+
+    return vec;
+}
+
 int main() {
     print(vectorToReverse);
     auto reversedVector = reverseSolutionOne(vectorToReverse);
@@ -63,6 +71,8 @@ int main() {
     reversedVector = reverseSolutionFive(vectorToReverse);
     print(reversedVector);
     reversedVector = reverseSolutionSix(vectorToReverse);
+    print(reversedVector);
+    reversedVector = reverseSolutionSeven(vectorToReverse);
     print(reversedVector);
 
     return 0;

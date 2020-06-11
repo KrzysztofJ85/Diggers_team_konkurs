@@ -10,3 +10,4 @@ std::vector<int> reverseSolutionThree(std::vector<int>);
 std::vector<int> reverseSolutionFour(std::vector<int>);
 std::vector<int> reverseSolutionFive(std::vector<int>);
 std::vector<int> reverseSolutionSix(std::vector<int>);
+std::vector<int> reverseSolutionSeven(std::vector<int>);
